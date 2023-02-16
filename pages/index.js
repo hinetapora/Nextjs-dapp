@@ -6,7 +6,7 @@ import Mint from '../components/Mint';
 export default function Home() {
 
   return (
-    <div className={`flex flex-col min-h-screen justify-center items-center bg-[url("/assets/bg.png")] bg-center bg-cover`}>
+    <div className={`flex flex-col min-h-screen justify-center items-center bg-center bg-cover`}>
       <Head>
         <title>Nextjs Boilerplate Minting Dapp</title>
         <meta name="description" content="Created by Fazel" />
