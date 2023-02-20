@@ -6,10 +6,10 @@ import Mint from '../components/Mint';
 export default function Home() {
 
   return (
-    <div className={`flex flex-col min-h-screen justify-center items-center bg-center bg-cover`}>
+    <div className={`flex flex-col min-h-screen justify-center App items-center bg-center bg-cover `}>
       <Head>
-        <title>Nextjs Boilerplate Minting Dapp</title>
-        <meta name="description" content="Created by Fazel" />
+        <title>CantoArt Mint</title>
+        <meta name="description" content="Created by David feat Fazel" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -1,15 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 @layer base {
     body {
-        @apply font-bold tracking-wide text-[#14213D] font-mono tracking-widest
+        @apply font-bold tracking-wide text-[#14213D] font-mono tracking-widest 
     }
+    h1 {
+            color: #06fc99;;
+            font-family: 'Silkscreen', cursive;
+            line-height: 140%;
+            font-size: 26px;
+            text-align: center;
+            font-weight: 400;
+    }
+    title {
+            color: #06fc99;;
+            font-family: 'Silkscreen', cursive;
+            line-height: 140%;
+            font-size: 26px;
+            text-align: center;
+            font-weight: 400;
+}
 }
 
 @layer components {
     .social {
         @apply hover:scale-90 transition-all ease-in-out
     }
+    .App {
+        background: repeating-linear-gradient(0deg, #151515 0%, #151515 4px, #141a18 4px, #141a18 8px);
+        /* background-repeat:repeat-y; */
+        display: flex;
+        height: 100%;
+        flex-direction: column
+    }
+
 }
+
+

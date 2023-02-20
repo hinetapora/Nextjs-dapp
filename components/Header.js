@@ -11,7 +11,7 @@ function Header() {
     <div className='w-full h-20 flex justify-between items-center p-5 absolute top-0'>
     <div>
     <h1>
-        Nextjs Dapp Boilerplate
+        CantoArt Mint
     </h1>
     </div>
 
