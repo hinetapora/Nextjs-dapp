@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 @layer base {
     body {
         @apply font-bold tracking-wide text-[#14213D] font-mono tracking-widest 
     }
-    h1 {
+
+    .title {
             color: #06fc99;;
             font-family: 'Silkscreen', cursive;
             line-height: 140%;
@@ -15,28 +16,70 @@
             text-align: center;
             font-weight: 400;
     }
-    title {
-            color: #06fc99;;
-            font-family: 'Silkscreen', cursive;
-            line-height: 140%;
-            font-size: 26px;
-            text-align: center;
-            font-weight: 400;
-}
 }
 
 @layer components {
     .social {
         @apply hover:scale-90 transition-all ease-in-out
     }
-    .App {
+    .app {
         background: repeating-linear-gradient(0deg, #151515 0%, #151515 4px, #141a18 4px, #141a18 8px);
         /* background-repeat:repeat-y; */
         display: flex;
         height: 100%;
         flex-direction: column
     }
+    .app_green {
+        color: #06fc99;
+        font-family: 'Silkscreen', cursive;
+        line-height: 140%;
+        font-size: 44px;
+        text-align: center;
+        font-weight: 400;
+    }
+    .app_green_18 {
+        color: #06fc99;
+        font-family: Silkscreen;
+        line-height: 140%;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 400;
 
+    }
+    .logo {
+        color: #06fc99;
+        font-weight: bold;
+        font-size: 24px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+    .box_background {
+        --tw-bg-opacity: 1;
+        background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+        background-image: url(https://canto.io/assets/coh-banner.5ca29955.png);
+    }
+    
+    .navLink {
+        height: 68px;
+        font-size: 44px;
+        width: 100%;
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out 0s;
+        /* background-color: transparent; */
+        background-size: 0% 100%;
+    }
+    .navLink:hover {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: black;
+        background-image: linear-gradient(to right, rgb(6, 252, 153) 0%, rgb(6, 252, 153) 40%, rgb(6, 252, 153) 100%);
+        background-repeat: no-repeat;
+        background-size: 200% 100%;
+        transition: background-size 0.7s ease 0s, background-color 0.7s ease 0s;
+        transform: scale(1.1);
+    }
 }
-
-

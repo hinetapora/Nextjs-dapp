@@ -8,8 +8,8 @@ import Discord from '/public/assets/icons/dicordw.png'
 function Header() {
 
   return (
-    <div className='w-full h-20 flex justify-between items-center p-5 absolute top-0'>
-    <div>
+    <div className='w-full h-20 flex justify-between logo items-center p-5 absolute top-0'>
+    <div className='app_green'>
     <h1>
         CantoArt Mint
     </h1>

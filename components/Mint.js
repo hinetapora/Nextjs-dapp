@@ -58,17 +58,20 @@ function Mint() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center space-y-5 w-full">
+    <div className="flex flex-col  justify-center app_green_18 items-center space-y-5 w-full">
       <div>
         <button
           className={`${
             address ? "hidden" : "block"
-          } w-[200px] h-[50px] font-bold bg-white shadow-lg rounded-md hover:bg-slate-200 transition-all ease-in-out`}
+          } font-bold navLink`}
           onClick={(e) => {
             e.preventDefault();
             connect();
-          }}
+          }}                  
+          /* w-[200px] h-[50px] font-bold navlink bg-white shadow-lg rounded-md hover:bg-slate-200 transition-all ease-in-out */
+
         >
+
           Connect Wallet
         </button>
       </div>
@@ -77,7 +80,7 @@ function Mint() {
         id="containerbox"
         className={`${
           address ? "flex" : "hidden"
-        } bg-zinc-300 text-center flex-col sm:flex-row sm:justify-around justify-center items-center space-y-5 sm:space-y-0 p-2 w-[95%] lg:w-[60%] min-h-[400px] shadow-lg rounded-tl-2xl rounded-br-2xl`}
+        } box_background text-center flex-col sm:flex-row sm:justify-around justify-center items-center space-y-5 sm:space-y-0 p-2 w-[95%] lg:w-[60%] min-h-[400px] shadow-lg rounded-tl-2xl rounded-br-2xl`}
       >
         <div className="sm:w-[300px] w-[250px]">
           <Swiper
@@ -193,7 +196,7 @@ function Mint() {
           id="mintinfo"
           className="flex flex-col justify-center items-center space-y-5"
         >
-          <p className="bg-white p-2 rounded-md shadow-md text-md sm:text-xl">
+          <p className="shadow-md text-md sm:text-xl">
             <span className="animate-pulse">
               {Presale ? "Presale" : "Publicsale"}
             </span>
@@ -208,7 +211,7 @@ function Mint() {
             {Minted} of {Presale ? WLSupply : Supply} Minted
           </p>
 
-          <div className="flex justify-center items-center space-x-5 p-2 bg-white rounded-md shadow-lg">
+          <div className="flex justify-center items-center space-x-5 p-2 rounded-md shadow-lg">
             <button
               className=" w-10 h-10 rounded-full bg-slate-700 text-white font-bold hover:bg-slate-500 transition-all ease-in-out shadow-xl"
               onClick={(e) => {
@@ -234,12 +237,12 @@ function Mint() {
             {Presale
               ? String((WLPrice * Token) / 1e18)
               : String((Price * Token) / 1e18)}{" "}
-            ETH
+            ⋐
           </p>
 
           <div>
             <button
-              className={` w-[150px] h-[50px] font-bold bg-white shadow-lg rounded-md hover:bg-slate-200 transition-all ease-in-out`}
+              className={` w-[150px] h-[50px] navLink`}
               onClick={(e) => {
                 e.preventDefault();
                 if (Presale) {

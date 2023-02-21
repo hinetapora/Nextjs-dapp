@@ -2038,10 +2038,8 @@ contract ERC721A is IERC721A {
 
 // File: contracts/ERC721A with OS royalties.sol
 
-
-
 //Developer : FazelPejmanfar , Twitter :@Pejmanfarfazel
-
+//Developer : DavidAwatere , Twitter :@cosydell
 
 
 pragma solidity >=0.7.0 <0.9.0;
@@ -2056,12 +2054,12 @@ contract Fazel is ERC721A, Ownable, ReentrancyGuard, DefaultOperatorFilterer   {
 
   string public baseURI;
   string public notRevealedUri;
-  uint256 public cost = 0.05 ether;
-  uint256 public wlcost = 0.05 ether;
-  uint256 public maxSupply = 4772;
-  uint256 public WlSupply = 1000;
-  uint256 public MaxperWallet = 5;
-  uint256 public MaxperWalletWl = 3;
+  uint256 public cost = 42 ether;
+  uint256 public wlcost = 42 ether;
+  uint256 public maxSupply = 420;
+  uint256 public WlSupply = 42;
+  uint256 public MaxperWallet = 15;
+  uint256 public MaxperWalletWl = 13;
   bool public paused = false;
   bool public revealed = false;
   bool public preSale = true;
