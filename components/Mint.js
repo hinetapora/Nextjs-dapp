@@ -237,7 +237,7 @@ function Mint() {
             {Presale
               ? String((WLPrice * Token) / 1e18)
               : String((Price * Token) / 1e18)}{" "}
-            ⋐
+          ⋐
           </p>
 
           <div>

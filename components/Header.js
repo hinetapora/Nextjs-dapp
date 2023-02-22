@@ -11,10 +11,9 @@ function Header() {
     <div className='w-full h-20 flex justify-between logo items-center p-5 absolute top-0'>
     <div className='app_green'>
     <h1>
-        CantoArt Mint
+        canto: botanical mint
     </h1>
     </div>
-
     <div className='flex justify-center items-center gap-2'>
     <a className='social' href='https://opensea.io/FazelPejmanfar' target={'_blank'} rel='noreferrer'>
     <Image src={Opensea} width={30} height={30} alt={'Opensea'}/>
@@ -30,6 +29,10 @@ function Header() {
 
     <a className='social' href='https://' target={'_blank'} rel='noreferrer'>
     <Image src={Discord} width={30} height={30} alt={'Discord'}/>
+    </a>
+
+    <a className='social' href='https://creativecommons.org/publicdomain/zero/1.0/' target={'_blank'} rel='noreferrer'>
+    <Image src="/public/assets/cc_icon_white_x2.png" width={30} height={30} alt={'CC Public Domain'}/>
     </a>
     </div>
     </div>

@@ -33,7 +33,7 @@ export default function Wrapper({ children }) {
   const [Paused, setPaused] = useState(false);
   const [UserProof, setUserProof] = useState([]);
   const [MRoot, setMRoot] = useState();
-  const ContractAddress = "0xbe93445f90EDEc0B0091E762DcBDba3D2a4d2A17";
+  const ContractAddress = "0xdCDd053F5A74778bA5BC24756ac2f117312c2780";
   //const ChainID = { network: "Goerli", ID: 5 };
   const ChainID = { network: "Canto", ID: 7700 };
 
